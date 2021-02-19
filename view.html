@@ -3,18 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/foodwith.css">
     <title>
-        foodwith view
+        상세컨텐츠 : 푸드위드
     </title>
 </head>
 
 <body>
-    <div class="blind">
-        <p><a href="#title_box">레시피 출처</a></p>
-        <p><a href="#recipe_detail_box">레시피 자세히보기</a></p>
-        <p><a href="#recipe_method_detail">상세 레시피</a></p>
+    <div class="skip_nav">
+        <a href="#content">본문 바로가기</a>
     </div>
     <div class="wrap">
         <header class="main_head">
@@ -23,30 +21,25 @@
                     <span class="blind">foodwidth logo</span>
                 </a>
             </h1>
+            <!-- [D] active를 추가하면 navigation이 나타납니다 -->
             <button type="button" class="ham_menu">
                 <span class="blind">
                     메뉴 버튼
                 </span>
             </button>
-            <ul class="menu_head">
-                <li>
-                    <a href="#">
-                        About
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Work
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Contact
-                    </a>
-                </li>
-            </ul>
+            <nav class="menu_head">
+                <a href="#" class="menu_nav_link">
+                    About
+                </a>
+                <a href="#" class="menu_nav_link">
+                    Work
+                </a>
+                <a href="#" class="menu_nav_link">
+                    Contact
+                </a>
+            </nav>
         </header>
-        <div class="container">
+        <div id="content" class="container">
             <div class="title_box">
                 <div class="title_inline_box">
                     <h2 class="view_title">딸기 케이크</h2>
@@ -65,8 +58,6 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="recipe_detail_box">
                 <h3 class="recipe_detail_title">음식 정보</h3>
                 <p class="recipe_detail_subtitle">딸기를 주재료로 쓴 케이크 딸기를 토핑으로 쓰거나, 딸기를 갈아서 반죽에 넣은 케이크 <a
                         href="https://terms.naver.com" class="recipe_detail_link">https://terms.naver.com</a></p>
@@ -100,8 +91,6 @@
                         8. 케이크가 굳었으면 딸기를 올려 장식해준다.
                     </li>
                 </ol>
-            </div>
-            <div class="recipe_method_detail">
                 <table class="recipe_method_table">
                     <caption class="blind">케이크 조리 상세 과정</caption>
                     <colgroup>
